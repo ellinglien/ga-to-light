@@ -27,13 +27,12 @@ The first run sets itself up (a one-time download of about 60 MB). If your Mac s
 
 Run it again any time with `cd ga-to-light-main && ./run`.
 
-## Privacy
+## Good to know
 
-This handles your 2FA secrets, so please be suspicious of it and read the code first. It's one file, [`ga_to_light.py`](ga_to_light.py), about 300 lines.
-
-- Works completely **offline**. The only network use is the one-time setup that installs OpenCV, NumPy and qrcode from PyPI.
-- **Nothing is written to disk.** Accounts live in memory and are gone when the window closes.
-- Secrets are **never printed**; only account names are.
+- **It runs offline.** After the first-run setup, you can turn off Wi-Fi. Nothing is saved, and secrets are never shown on screen as text.
+- **Keep Google Authenticator** until you've logged in to each account with a code from the Light.
+- **Used screenshots?** Delete them afterwards (and empty Recently Deleted), because they contain your secrets.
+- It's one short file, [`ga_to_light.py`](ga_to_light.py), if you want to look.
 
 ## What won't move
 
@@ -55,4 +54,4 @@ These use fake accounts. They round-trip each account through a real QR image an
 
 ---
 
-Not affiliated with Light or Google. MIT licensed.
+Provided as-is; use at your own risk. Not affiliated with Light or Google. MIT licensed.

@@ -330,6 +330,9 @@ def main(argv: list[str]) -> int:
         show(usable)
     cv2.destroyAllWindows()
     print("\nDone. Nothing was saved to disk.")
+    print("Keep Google Authenticator until each account works with a code from the Light.")
+    if argv:
+        print("Delete the screenshots you used (and empty Recently Deleted): they contain your secrets.")
     return 0
 
 
